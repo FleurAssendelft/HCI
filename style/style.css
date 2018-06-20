@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Arapey');
+@import url('https://fonts.googleapis.com/css?family=Lustria');
+@import url('https://fonts.googleapis.com/css?family=Khula:300');
+@import url('https://fonts.googleapis.com/css?family=Khula:600');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body{
+	background-image: url("../afbeeldingen/golven.jpeg");
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+  	margin: 0px;
+  	padding: 0px;
+}
+
+
+
+/* -------------------------------------------------------------------
+hoofdstukken
+------------------------------------------------------------------- */
+h1{
+	font-family: 'Arapey', serif;
+	font-size: 50px;
+	text-align: center;
+	margin: 0px;
+}
+h2{
+	font-family: 'Lustria', serif;
+	font-size: 18px;
+	text-align: center;
+	margin: 0px;
+}
+
+h3{
+	font-family: 'Khula', sans-serif;
+	margin: 0px;
+}
+
+
+
+p{
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* -------------------------------------------------------------------
+navigatie
+------------------------------------------------------------------- */
+li{
+	list-style-type: none;
+	font-family: 'Khula', sans-serif;
+	text-align: center;	
+}
+
+
+
+a#nav{
+	text-decoration: none;
+	color: black;
+	
+}
+
+a#nav:hover{
+	color: rgb(0, 153, 255);
+	transition: 0.2s ease-in-out;
+}
+/* -------------------------------------------------------------------
+head
+------------------------------------------------------------------- */
+.head{
+	display: flex;
+    flex-direction: row;
+}
+.back{
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-left: 5%;
+	font-size: 50px;
+	width: 10%;
+}
+
+#tekst{
+	margin-top: 10%;
+}
+
+#pijl{
+	text-decoration: none;
+	color: black;
+}
+
+#pijl:hover{
+	color: pink;
+}
+
+.naam{
+	width: 80%
+}
+
+/* -------------------------------------------------------------------
+paragraaf
+------------------------------------------------------------------- */
+
+#over, #topic, #workshop, #excurtion, #labweek{
+	margin: 0px;
+	text-align: inherit;
+}
+
+.tekst{
+	font-family: 'Open Sans', sans-serif;
+	text-align: justify;
+	background-color: rgba(255,255,255, 0.8);
+	padding-top: 2%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 2%;
+	margin-top: 1%;
+
+}
+
+/* -------------------------------------------------------------------
+kopjes 
+------------------------------------------------------------------- */
+.informatie, .workshop, .excurtion, .topic,  .labweek{
+	background-color: rgba(255,255,255, 0.5);
+	padding: 2%;
+	margin-bottom: 2%;
+}
+
+
+
+
+/* -------------------------------------------------------------------
+over mij
+------------------------------------------------------------------- */
+#profielfoto{
+	width: 100%;
+	text-align: center;
+	padding-bottom: 2%;
+}
+
+.informatie{
+	display: flex;
+	flex-direction: column;
+}
+
+#tekst{
+	padding-left: 2%;
+	text-align: justify;
+}
+
+
+/* -------------------------------------------------------------------
+topics
+------------------------------------------------------------------- */
+
+
+.keuze{
+	background-color: rgba(255,255,255, 0.8);
+	text-align: center;
+	margin: 1%;
+}
+.keuze:hover{
+	background-color: rgba(255,255,255);
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover{
+	color: pink;
+
+}
+
+.eerste, .tweede{
+	display: flex;
+	flex-direction: column;
+}
+
+
+/* -------------------------------------------------------------------
+workshop
+------------------------------------------------------------------- */
+#screenshot{
+	width: 100%;
+}
+
+.vragen{
+	display: flex;
+	flex-direction: column;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.video{
+	width: 100%;
+	
+}
+
+.uitleg{
+	width: 98%;
+	padding-right: 2%;
+}
+
+
+/* -------------------------------------------------------------------
+excursie
+------------------------------------------------------------------- */
+#tower{
+	width: 100%;
+}
+
+
+/* -------------------------------------------------------------------
+labweek
+------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------
+kopjes 
+------------------------------------------------------------------- */
+.footer{
+	background-color: white;
+	margin: 0px;
+	padding-top: 2%;
+	padding-bottom: 0px;
+	border: 0px;
+	width: 100%;
+	text-align: center;
+}
+
+.fa {
+  padding: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.8;
+    color: black;
+    background-color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.fa-facebook, .fa-linkedin, .fa-instagram, .fa-pinterest{
+  background: black;
+  color: white;
+}
+
+#made{
+	margin: 0px;
+	padding: 1%;
+}
+
+/* -------------------------------------------------------------------
+fotografie
+------------------------------------------------------------------- */
+iframe{
+	width: 100%;
+	height: 75vh;
+}
+
+
+/* -------------------------------------------------------------------
+media queries
+------------------------------------------------------------------- */
+@media only screen and (min-width: 500px) {
+
+	li{
+		display: inline-block;
+		padding-right: 2%;
+	}
+
+	.naam{
+		margin-top: 10%;
+	}
+
+	.navigatie{
+		background-color: rgba(255,255,255, 0.5);
+		text-align: right;
+		position: fixed;
+		width: 98%;
+		margin-top: 0px;
+		padding: 1%;
+
+	}
+
+}
+
+@media only screen and (min-width: 725px) {
+	.eerste, .tweede{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.informatie{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.keuze{
+		width: 50%;
+	}
+
+	.vragen{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.video{
+	width: 50%;
+	
+	}
+
+	.uitleg{
+		width: 48%;
+		padding-right: 2%;
+	}
+
+
+/* -------------------------------------------------------------------
+excursie
+------------------------------------------------------------------- */
+	#tower{
+		width: 75%;
+	}
+}
+
+@media only screen and (min-width: 1032px) {
+	.navigatie{
+		padding: 0.25%;
+	}
+
+
+}
+
+
+
+
